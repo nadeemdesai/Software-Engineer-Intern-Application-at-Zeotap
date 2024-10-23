@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine</title>
+</head>
+<body>
+    <h1>Rule Engine</h1>
+
+    <h2>Add Rule</h2>
+    <form action="/add_rule" method="post">
+        <label for="rule_string">Rule String:</label>
+        <input type="text" id="rule_string" name="rule_string" required>
+        <button type="submit">Add Rule</button>
+    </form>
+
+    <h2>Add User</h2>
+    <form action="/add_user" method="post">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <br>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required>
+        <br>
+
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" name="salary" required>
+        <br>
+
+        <label for="experience">Experience:</label>
+        <input type="number" id="experience" name="experience" required>
+        <br>
+
+        <button type="submit">Add User</button>
+    </form>
+
+    <h2>Evaluate User Against Rule</h2>
+    <form action="/evaluate_user" method="post">
+        <label for="rule_id">Rule ID:</label>
+        <input type="number" id="rule_id" name="rule_id" required>
+        <br>
+
+        <label for="age_eval">Age:</label>
+        <input type="number" id="age_eval" name="age" required>
+        <br>
+
+        <label for="department_eval">Department:</label>
+        <input type="text" id="department_eval" name="department" required>
+        <br>
+
+        <label for="salary_eval">Salary:</label>
+        <input type="number" id="salary_eval" name="salary" required>
+        <br>
+
+        <label for="experience_eval">Experience:</label>
+        <input type="number" id="experience_eval" name="experience" required>
+        <br>
+
+        <button type="submit">Evaluate User</button>
+    </form>
+
+    <h2>Results</h2>
+    <div id="results">
+        <!-- Results will be displayed here after evaluation -->
+    </div>
+
+    <script>
+        // Optional: You could add JavaScript here for AJAX calls or better interactivity
+    </script>
+</body>
+</html>
